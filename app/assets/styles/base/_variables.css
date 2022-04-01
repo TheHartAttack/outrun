@@ -1,0 +1,13 @@
+$matrixOpacity: 0.125;
+$triangleHeight: 400px;
+$projectImageWidth: 400px;
+
+/*Colors*/
+$darkBlue: rgba(0, 25, 80, 1);
+$blue: rgba(0, 50, 160, 1);
+$purple: rgba(140, 71, 153, 1);
+$lightPurple: color-mod(rgba(140, 71, 153, 1) tint(50%));
+$pink: rgba(208, 0, 112, 1);
+
+/*Clip Path Shapes*/
+$octagon: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);

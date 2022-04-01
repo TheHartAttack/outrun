@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "RoadRage";
+  src: url("./assets/fonts/RoadRage.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "RocketRinder";
+  src: url("./assets/fonts/RocketRinder.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "OCR";
+  src: url("./assets/fonts/OCR.otf") format("opentype");
+  font-weight: 600;
+}

@@ -1,0 +1,18 @@
+.section {
+  padding: 0 100px;
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+
+  &--full-width {
+    padding: 0;
+    max-width: unset;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 50px;
+    text-transform: uppercase;
+  }
+}

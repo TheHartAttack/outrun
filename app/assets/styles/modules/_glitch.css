@@ -1,0 +1,37 @@
+.glitch {
+  &-element {
+    opacity: 0;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+  }
+
+  &--activated {
+    & .glitch-element {
+      animation: glitch 500ms 1000ms;
+      animation-iteration-count: 2;
+      animation-fill-mode: forwards;
+
+      &:before {
+        opacity: 0.5;
+        animation: glitchBefore 625ms 1000ms;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards;
+      }
+
+      &:after {
+        opacity: 0.75;
+        animation: glitchAfter 375ms 1000ms;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}

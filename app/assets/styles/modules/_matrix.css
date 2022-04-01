@@ -1,0 +1,10 @@
+.matrix {
+  max-height: 100%;
+  opacity: 0.0625;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  animation: matrixOpacity 5000ms infinite alternate;
+}

@@ -1,0 +1,29 @@
+:root {
+  --themeColor: red;
+  --themeColorLightened: white;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, color-mod(rgba(0, 10, 32, 1) saturation(50%)) 0vh, color-mod(rgba(0, 50, 160, 1) saturation(50%)) 37.5vh, color-mod(rgba(208, 0, 112, 1) saturation(50%)) 50vh, black 100vh);
+  font-family: monospace;
+  color: white;
+  overflow: hidden;
+}
+
+.body--loaded {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-track {
+    background: black;
+  }
+
+  &-thumb {
+    background: var(--themeColor);
+  }
+}

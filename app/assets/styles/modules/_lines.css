@@ -1,0 +1,13 @@
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__inner {
+    fill: none;
+    stroke: var(--themeColor);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-miterlimit: 1;
+  }
+}

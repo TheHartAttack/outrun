@@ -1,0 +1,67 @@
+.image {
+  background-position: center center;
+  opacity: 0;
+
+  &--activated {
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    opacity: 1;
+    transition: opacity 1ms 1000ms;
+
+    & .image__glitch {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: var(--bgImage);
+      background-size: cover;
+      background-position: center center;
+      background-blend-mode: color-burn;
+      animation: imageGlitch 875ms 1000ms;
+      animation-iteration-count: 2;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: var(--bgImage);
+      background-size: cover;
+      background-position: center center;
+      animation: imageGlitchBefore 1625ms 1000ms;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      clip-path: polygon(0 0, 100% 0, 100% 5%, 0 5%, 0 7%, 100% 7%, 100% 22%, 0 22%, 0 27%, 100% 27%, 100% 40%, 0 40%, 0 44%, 100% 44%, 100% 57%, 0 57%, 0 63%, 100% 63%, 100% 78%, 0 78%, 0 81%, 100% 81%, 100% 100%, 100% 0);
+      filter: hue-rotate(90deg);
+      opacity: 0;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: var(--bgImage);
+      background-size: cover;
+      background-position: center center;
+      animation: imageGlitchAfter 1375ms 1000ms;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%, 0 17%, 100% 17%, 100% 32%, 0 32%, 0 37%, 100% 37%, 100% 50%, 0 50%, 0 54%, 100% 54%, 100% 67%, 0 67%, 0 73%, 100% 73%, 100% 88%, 0 88%, 0 91%, 100% 91%, 100% 100%, 100% 0);
+      filter: hue-rotate(-90deg);
+      opacity: 0;
+      z-index: 2;
+    }
+  }
+}

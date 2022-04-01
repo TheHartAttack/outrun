@@ -1,0 +1,95 @@
+.outrun {
+  height: 100vh;
+  position: relative;
+  border-bottom: 2px solid var(--themeColor);
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &__sun {
+    background: linear-gradient(180deg, color-mod(yellow lightness(75%)), color-mod(darkorange lightness(75%)), color-mod(darkviolet lightness(75%)));
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    position: absolute;
+    top: 43.75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    box-shadow: 0 0 50px #fff, 0 -10px 100px yellow, 0 10px 100px darkviolet;
+    filter: blur(2px);
+  }
+
+  &__canvas {
+    z-index: 9999;
+    position: absolute;
+  }
+
+  &__matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    z-index: 99;
+  }
+
+  &__arrow {
+    height: 100px;
+    width: 50px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    visibility: hidden;
+
+    &-path {
+      width: 100%;
+      height: 75%;
+      position: relative;
+      top: 0;
+      opacity: 0;
+      background-color: var(--themeColor);
+      clip-path: polygon(50% 0%, 75% 62.5%, 100% 62.5%, 50% 100%, 0% 62.5%, 25% 62.5%);
+      animation: arrow 1000ms ease-out 5000ms infinite alternate;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url("./assets/images/grain.png");
+    opacity: 0.25;
+    animation: grain 2500ms steps(10) infinite;
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  &::after {
+    content: "";
+    background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.125) 0, transparent 1px, transparent 2px, transparent 3px, rgba(0, 0, 0, 0.1875) 4px, rgba(0, 0, 0, 0.125) 5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 100px 5vw black;
+    pointer-events: none;
+    z-index: 99999;
+  }
+}

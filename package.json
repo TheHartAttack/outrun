@@ -1,0 +1,49 @@
+{
+  "name": "danhart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack",
+    "previewDist": "node previewDist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "postcss-loader": "^6.1.1",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "autoprefixer": "^10.3.1",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "color": "^4.0.1",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "dat.gui": "^0.7.7",
+    "dotenv-webpack": "^7.1.0",
+    "fs-extra": "^10.0.1",
+    "html-webpack-harddisk-plugin": "^2.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^2.6.0",
+    "normalize.css": "^8.0.1",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3",
+    "postcss-sqrt": "^1.0.1",
+    "three": "^0.132.0",
+    "url-loader": "^4.1.1",
+    "webpack-glsl-loader": "^1.0.1"
+  }
+}

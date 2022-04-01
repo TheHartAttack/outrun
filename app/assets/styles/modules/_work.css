@@ -1,0 +1,9 @@
+.work {
+  position: relative;
+  display: grid;
+  padding-bottom: calc($projectImageWidth * 0.25);
+
+  &__title {
+    grid-column: 1/-1;
+  }
+}
